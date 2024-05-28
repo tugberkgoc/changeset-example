@@ -1,0 +1,28 @@
+{
+	"name": "sub",
+	"version": "0.9.9",
+	"private": false,
+	"description": "sub",
+	"main": "build/index.js",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tugberkgoc/changeset-example.git"
+	},
+	"scripts": {
+		"clean": "rm -rf ./node_modules && rm -rf ./build",
+		"build": "tsc",
+		"watch:build": "tsc --build --incremental"
+	},
+	"author": "",
+	"license": "ISC",
+	"lint-staged": {
+		"*.{js,ts,tsx,css}": "prettier --write"
+	},
+	"peerDependencies": {},
+	"devDependencies": {
+		"@types/node": "^20.10.4"
+	}
+}

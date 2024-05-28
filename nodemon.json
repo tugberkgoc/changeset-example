@@ -1,0 +1,9 @@
+{
+	"exec": "npm run build",
+	"watch": [
+		"packages/sub/src/**/*",
+		"packages/sum/src/**/*"
+	],
+	"ignore": ["node_modules"],
+	"ext": "js,ts,tsx,scss"
+}
